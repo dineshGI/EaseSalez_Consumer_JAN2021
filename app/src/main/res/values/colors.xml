@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#FA7702</color>
+    <color name="colorPrimaryDark">#D15003</color>
+    <color name="colorAccent">#D15003</color>-->
+    <!-- <color name="colorPrimary">#ed1c24</color>-->
+    <color name="colorPrimary">#E62E2D</color>
+
+    <color name="colorPrimaryDark">#183059</color>
+    <!-- <color name="colorAccent">#1C6480</color>-->
+    <color name="colorAccent">#183059</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="button_gray">#323232</color>
+    <color name="trans">#DADADA</color>
+    <color name="hint_gray">#a4a2a2</color>
+    <color name="dark_gray">#5A5757</color>
+    <color name="new_gray">#626262</color>
+    <color name="lightgray">#f1f1f1</color>
+    <color name="green">#009900</color>
+    <!-- <color name="button_blue">#00acee</color>-->
+    <color name="button_blue">#183059</color>
+    <color name="yellow">#FA7702</color>
+    <color name="yellow_new">#F4D635</color>
+
+    <color name="border_line">#d7d7d7</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_brand">#363331</color>
+    <color name="tab_border">#808080</color>
+    <color name="tab_bg">#f7f7f7</color>
+    <color name="tab_bg_new">#f8f8f8</color>
+
+    <!--  <color name="lightgray">#dcdada</color>-->
+    <color name="store_bg">#F7F7F7</color>
+    <color name="order_yellow">#EFA723</color>
+    <color name="red">#E62E2D</color>
+    <color name="blue">#68C8F6</color>
+
+
+</resources>

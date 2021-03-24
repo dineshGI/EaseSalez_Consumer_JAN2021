@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittext_sqaure_bg_border"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/datatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="@string/ScanOrder"
+            android:textColor="@color/button_gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center|right"
+            android:padding="4dp"
+            android:src="@drawable/ic_local_see_black_24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:text="@string/Products"
+        android:textColor="@color/button_gray"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/orderdata"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_review"
+        android:gravity="top"
+        android:hint="@string/EnterItemNames"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textColor="@color/button_gray"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_btnbg_orange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/sdas"
+        android:layout_marginTop="20dp"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</LinearLayout>

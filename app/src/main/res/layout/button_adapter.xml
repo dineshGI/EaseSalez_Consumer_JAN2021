@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="4dp" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_btn"
+        android:gravity="center"
+        android:paddingLeft="8sp"
+        android:paddingRight="8sp"
+        android:text="Get Direction"
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <debug-overrides>
+        <base-config cleartextTrafficPermitted="true" >
+            <trust-anchors>
+                <!-- Trust user added CAs while debuggable only -->
+                <certificates src="system" />
+            </trust-anchors>
+        </base-config>
+    </debug-overrides>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.100.6.203</domain>
+        <domain includeSubdomains="true">14.141.212.203</domain>
+        <domain includeSubdomains="true">220.225.104.144</domain>
+    </domain-config>
+</network-security-config>

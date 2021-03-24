@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:padding="10dp" />
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:dampingRatio="0.5"
+        app:selectedDotColor="@color/colorPrimary"
+        app:dotsColor="@color/lightgray"
+        app:dotsSize="15dp"
+        app:dotsSpacing="6dp"
+        app:dotsStrokeColor="@color/colorPrimary"
+        app:dotsStrokeWidth="2dp"
+        app:stiffness="300"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/prev"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_btnbg_grey"
+            android:padding="5dp"
+            android:text="@string/Skip"
+            android:textAllCaps="false"
+            android:textColor="@color/button_gray"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_btnbg_grey"
+            android:padding="5dp"
+            android:text="@string/Next"
+            android:textAllCaps="false"
+            android:textColor="@color/button_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

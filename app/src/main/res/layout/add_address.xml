@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/c_name"
+                style="@style/edittext"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/p_mobile"
+                style="@style/edittext"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray" />
+
+            <EditText
+                android:id="@+id/Address1"
+                style="@style/edittext"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/address_one"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray" />
+
+            <EditText
+                android:id="@+id/Address2"
+                style="@style/edittext"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/address_two"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray" />
+
+
+            <EditText
+                android:id="@+id/p_city"
+                style="@style/edittext"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray" />
+
+            <EditText
+                android:id="@+id/p_pincode"
+                style="@style/edittext"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/pincode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray" />
+
+            <EditText
+                android:id="@+id/landmark"
+                style="@style/edittext"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/landmark"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <CheckBox
+                    android:id="@+id/mark_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/termstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Set As Default Address"
+                    android:textColor="@color/button_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/p_save"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/border_btnbg_orange"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

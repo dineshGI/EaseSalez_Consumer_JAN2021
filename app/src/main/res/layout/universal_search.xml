@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edittext_sqaure_bg_border"
+            android:capitalize="none"
+            android:visibility="gone"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/Search"
+            android:imeOptions="actionDone"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/button_gray"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@drawable/border_btnbg_blue"
+                android:gravity="center"
+                android:paddingLeft="20sp"
+                android:paddingTop="2sp"
+                android:paddingRight="20sp"
+                android:paddingBottom="2sp"
+                android:text="@string/Shop"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@drawable/border_gray_round"
+                android:gravity="center"
+                android:paddingLeft="20sp"
+                android:paddingTop="2sp"
+                android:paddingRight="20sp"
+                android:paddingBottom="2sp"
+                android:text="@string/Product"
+                android:textColor="@color/button_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" />
+
+</LinearLayout>

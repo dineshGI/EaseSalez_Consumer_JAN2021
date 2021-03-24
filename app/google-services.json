@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "482175050120",
+    "firebase_url": "https://smartsalez-android-app-8388c.firebaseio.com",
+    "project_id": "smartsalez-android-app-8388c",
+    "storage_bucket": "smartsalez-android-app-8388c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482175050120:android:6fe9ba0568529432325a3d",
+        "android_client_info": {
+          "package_name": "com.gieasesales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482175050120-t5nlqpsf062oeoh37ii20u9a3nrpaos7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5SLAvmTFLCB-fxcui8jPTTa5LLBbZdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482175050120-t5nlqpsf062oeoh37ii20u9a3nrpaos7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logos"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ease_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logos"
+            android:gravity="center"
+            android:text="@string/caption"
+            android:textColor="@color/dark_gray"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_agree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/condition"
+            android:textAlignment="center"
+            android:textColor="@color/button_gray"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_agree"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/border_btnbg_orange"
+            android:text="@string/agree_continue" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="web"
+            android:text="@string/terms_conditon"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed_validate_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/editbg_new"
+                android:drawableLeft="@drawable/ic_stay_current_portrait_black_24dp"
+                android:drawablePadding="5dp"
+                android:hint="@string/mobile_no"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/button_gray"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_mobile_register"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/border_btnbg_orange"
+                android:text="@string/register_now" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_existing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/ed_existing_mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editbg_new"
+            android:hint="@string/enter_mobile_no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:textColor="@color/button_gray"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_existing_otp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editbg_new"
+            android:hint="@string/otp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/button_gray"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/border_btnbg_orange"
+            android:text="@string/register_now" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/new_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editbg_new"
+            android:drawableLeft="@drawable/ic_stay_current_portrait_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Mobile No"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:textColor="@color/button_gray"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/new_pin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editbg_new"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="@string/set_pin"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/button_gray"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editbg_new"
+            android:drawableLeft="@drawable/ic_stay_current_portrait_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="@string/otp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/button_gray"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/border_btnbg_orange"
+            android:text="@string/register_now" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/Call"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/resend_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/resend_otp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

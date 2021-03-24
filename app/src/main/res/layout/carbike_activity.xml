@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tool"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_sqaure_bg_border"
+        android:capitalize="none"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/Search"
+        android:imeOptions="actionDone"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/button_gray"
+        android:textColorHint="@color/hint_gray"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shop_new_layout" />
+
+            <TextView
+                android:id="@+id/MarqueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/text_secondary"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="No Items dsfdsfdsa fsadfdsafd dsfdsafdsf dsfdsafadsf fdsafadsf dsfdsafdaf fdsafdsf dsfdsafadsf dsfadsfdsaf dsfdsafdf"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ss.com.bannerslider.views.BannerSlider
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    app:defaultIndicators="circle"
+                    app:interval="3000"
+                    app:loopSlides="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:reverseLayout="false" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/lightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/itemtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/button_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/grid"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_swap"
+                        android:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="Sort By"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/spin_filter_bg">
+
+                        <Spinner
+                            android:id="@+id/SpinSortBy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:padding="5dp"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/lightgray" />
+
+                <com.gieasesales.utils.ExpandableHeightGridView
+                    android:id="@+id/listview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:horizontalSpacing="20dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="1"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:verticalSpacing="20dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/no_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="No Items"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_findcars"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/border_btnbg_orange"
+            android:text="@string/FindCars"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </FrameLayout>
+</RelativeLayout>

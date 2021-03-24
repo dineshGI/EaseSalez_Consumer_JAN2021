@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_listview"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ContactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/button_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/default_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:text="Default Address"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ly_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_orange"
+                        android:gravity="center"
+                        android:text="Delete"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/btn_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:background="@drawable/border_blue"
+                        android:gravity="center"
+                        android:text="Edit"
+                        android:textColor="@color/button_blue"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/btn_default"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cart_green"
+                        android:gravity="center"
+                        android:text="@string/Select"
+                        android:textColor="@color/green"
+                        android:textSize="15dp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/btn_img_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_contact_mail_black_24dp"
+                        android:tint="@color/green" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

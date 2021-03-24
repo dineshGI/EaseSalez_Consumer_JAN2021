@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+         <item name="colorAccent">@color/colorAccent</item>-->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorAccent</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="TimePickerDialogTheme" parent="@android:style/Widget.Material.Light.TimePicker" tools:targetApi="lollipop">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:datePickerMode" tools:targetApi="lollipop">spinner</item>
+    </style>
+
+    <style name="SpinnerTimePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- android:timePickerStyle was not added until API 21 -->
+        <item name="android:timePickerStyle" tools:targetApi="lollipop">@style/TimePickerStyle
+        </item>
+        <item name="android:editable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:selectable">false</item>
+        <item name="android:inputType">none</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:format24Hour">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+
+
+    </style>
+
+
+    <style name="TimePickerStyle" parent="@android:style/Widget.Material.Light.TimePicker" tools:targetApi="lollipop">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/border_btnbg</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="edittext">
+        <item name="android:textColor">@color/button_gray</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/lightgray</item>
+        <item name="colorControlActivated">#F4D73B</item>
+    </style>
+
+    <style name="alertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/black</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--        <item name="android:textSize">10sp</item>-->
+        <item name="android:titleTextColor" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="android:subtitleTextColor" tools:ignore="NewApi">@color/button_gray</item>
+    </style>
+
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

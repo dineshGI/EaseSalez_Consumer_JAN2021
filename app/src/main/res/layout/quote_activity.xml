@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_sqaure_bg_border"
+        android:capitalize="none"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/Search"
+        android:imeOptions="actionDone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/button_gray"
+        android:textColorHint="@color/hint_gray"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:orientation="vertical" />
+
+</LinearLayout>
